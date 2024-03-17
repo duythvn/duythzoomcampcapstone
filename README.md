@@ -15,7 +15,23 @@ Data is then transformred and ingested to Big Query
 Final visulisation is presented via Google Looker
 
 
-III - Local Setup
+
+III - dataset and data analysis
+#Dataset
+customer_support_tickets.csv is provided for demonstrative purposes
+In real life scenario, this file will be ingested as a batch method through an SFTP approach (download from SFTP,  upload to a cloud storage, then the main pipeline will kick in)
+
+#Data analysis
+- Our assumption  is tickets are auto received  & reponded within the first 30 mins and we will use first_response_time as the time when the  tickets are received
+A dashboard has been built to help analyse a few important questions in the Customer Service Department such as
+- How many tickets received past few months to understand ticket volume. The info can be used for bechmarking & resource planning purposes
+- Customer satisfaction rating from a rank  of  1 to 5: with 5 being the highest rating score
+- Time to be resolved and correlation with customer satisfaction rating
+(Due to privacy, I have chosen to included a pdf report exported from Google Looker instead)
+
+
+
+IV- Local Setup
 To set up the project locally, follow these steps:
 
 
@@ -37,7 +53,7 @@ docker pull mageai/mageai:latest
 
 
 
-IV - Set up
+V - Set up
 #Copy the Mage pipeline and all blocks as per below
 Copy Mage "de_zoomcamp_capstone" pipeline to pipelines/de_zoomcamp_capstone in your Mage installation folder
 copy all the other blocks into the respective data_loaders, transformers and data_exporters folder  in your Mage installation
@@ -55,13 +71,7 @@ dev:
 
 
 
-#dataset
-customer_support_tickets.csv is provided for demonstrative purposes
-In real life scenario, this file will be ingested as a batch method through an SFTP approach (download from SFTP,  upload to a cloud storage, then the main pipeline will kick in)
-
-
-
-V - Contributing Guidelines
+VI - Contributing Guidelines
 This repository is for demonstrative purposes only, and contributions are not expected. However, feel free to share any improvements or modifications for learning purposes.
 
 
