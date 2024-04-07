@@ -3,10 +3,12 @@ capstone project for Data Engineering zoomcap
 
 
 I - Project Name
+
 Data Engineering Pipeline - Custom Support Ticket Report
 
 
 II - Objective
+
 The objective of this project is to create a data engineering pipeline to ingest customer support tickets of a company and provide detailed analysis through graphs/charts and reports.
 
 From the data, support managers can understand more about how well the support team has been performing. If the company's SLA has been met, and if there are rooms for improvements
@@ -17,6 +19,7 @@ The project simulate a data batch processing pipeline and make good uses for Mag
 
 
 III - dataset and data analysis
+
 #Dataset
 customer_support_tickets.csv is provided for demonstrative purposes.
 
@@ -32,6 +35,7 @@ customer_support_tickets.csv is provided for demonstrative purposes.
 
 
 IV- Tech
+
 The project was built to support both online & local run.
 
 We'll use a combination of Cloud technology, IaC, Data lake, Dat Ochestration, Data warehouse and transformation for demonstrative purposes
@@ -72,11 +76,14 @@ docker pull mageai/mageai:latest
 
 
 V - Set up
+
 #Copy the Mage pipeline and all blocks as per below
 Copy Mage "de_zoomcamp_capstone" pipeline to pipelines/de_zoomcamp_capstone in your Mage installation folder
 
 Copy all the other blocks into the respective data_loaders, transformers and data_exporters folder  in your Mage installation
+
 #Update mage  io_config.yaml , create a Mage profile called "dev" and update the below variables. SFTP variables are mostly used to download dataset from source destination
+
 #raw data file: 
 Can be found under raw-data folder
 
@@ -91,11 +98,13 @@ dev:
 
 
 VI - Contributing Guidelines
+
 This repository is for demonstrative purposes only, and contributions are not expected. However, feel free to share any improvements or modifications for learning purposes.
 
 
 
 VI - Known Issues/Limitations/Documentation
+
 Demo data is limited (1 quarter data from a made-up company).
 If you encounter any bugs or have feature requests, feel free to share them for learning purposes.
 Additional documentation, including API documentation and user guides, is not available for this demo project.
