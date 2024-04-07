@@ -8,6 +8,9 @@ Data Engineering Pipeline - Custom Support Ticket Report
 
 II - Objective
 The objective of this project is to create a data engineering pipeline to ingest customer support tickets of a company and provide detailed analysis through graphs/charts and reports.
+
+From the data, support managers can understand more about how well the support team has been performing. If the company's SLA has been met, and if there are rooms for improvements
+
 The project simulate a data batch processing pipeline and make good uses for MageAI for data ochestration and Looker for dahsboard visulisation
 
 
