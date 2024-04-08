@@ -109,3 +109,8 @@ Demo data is limited (1 quarter data from a made-up company).
 If you encounter any bugs or have feature requests, feel free to share them for learning purposes.
 Additional documentation, including API documentation and user guides, is not available for this demo project.
 
+
+Appendics:
+Findings
+![image](https://github.com/duythvn/duythzoomcampcapstone/assets/14797941/212c06ea-d946-4ee0-9de5-34f76ed533e5)
+
