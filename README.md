@@ -7,6 +7,8 @@ I - Project Name
 Data Engineering Pipeline - Custom Support Ticket Report
 
 
+
+
 II - Objective
 
 The objective of this project is to create a data engineering pipeline to ingest customer support tickets of a company and provide detailed analysis through graphs/charts and reports.
@@ -34,6 +36,8 @@ customer_support_tickets.csv is provided for demonstrative purposes.
 
 
 
+
+
 IV- Tech
 
 The project was built to support both online & local run.
@@ -52,6 +56,8 @@ please also pip install boto3 and aws_lambda_powertools
 - Data is  cleaned uploaded to a Google Cloud Storage Lake
 - Data is then transformred and ingested to Big Query
 - Final visulisation is presented via Google Looker
+
+![image](https://github.com/duythvn/duythzoomcampcapstone/assets/14797941/f3bf682f-5df6-49bf-937c-061f485c7ffd)
 
 
 If you want to test this locally, please follow these steps:
@@ -75,6 +81,8 @@ docker pull mageai/mageai:latest
 
 
 
+
+
 V - Set up
 
 #Copy the Mage pipeline and all blocks as per below
@@ -89,28 +97,41 @@ Can be found under raw-data folder
 
 dev:
   GOOGLE_SERVICE_ACC_KEY_FILEPATH: "GoogleACCKEY.json"
-  GOOGLE_LOCATION: US     
+  
+  GOOGLE_LOCATION: US    
+  
   SFTP_HOST: testSFTP_HOST
+  
   SFTP_PORT: SFTP_PORT
+  
   SFTP_USER: SFTP_USER
+  
   SFTP_PASSWORD: SFTP_PASSWORD
 
 
 
-VI - Contributing Guidelines
+VI - Findings
+
+![image](https://github.com/duythvn/duythzoomcampcapstone/assets/14797941/212c06ea-d946-4ee0-9de5-34f76ed533e5)
+
+
+
+
+VII - Contributing Guidelines
 
 This repository is for demonstrative purposes only, and contributions are not expected. However, feel free to share any improvements or modifications for learning purposes.
 
 
 
-VI - Known Issues/Limitations/Documentation
+VIII - Known Issues/Limitations/Documentation
 
 Demo data is limited (1 quarter data from a made-up company).
+
 If you encounter any bugs or have feature requests, feel free to share them for learning purposes.
+
 Additional documentation, including API documentation and user guides, is not available for this demo project.
 
 
-Appendics:
-Findings
-![image](https://github.com/duythvn/duythzoomcampcapstone/assets/14797941/212c06ea-d946-4ee0-9de5-34f76ed533e5)
+
+
 
